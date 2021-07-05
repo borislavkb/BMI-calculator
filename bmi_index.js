@@ -9,6 +9,8 @@ const username = document.querySelector("#name");
 
 const userdata = [];
 
+const olElement = document.querySelector("ol");
+
 formElement.addEventListener("submit", (event) => {
   const bmi = (weightInput.value / heightInput.value ** 2) * 10000;
   event.preventDefault();
@@ -22,14 +24,20 @@ formElement.addEventListener("submit", (event) => {
   }
 
   const userName = username.value;
-  const userWeight = weight.value;
-  const userHeight = height.value;
 
-  console.log(userName, userWeight, userHeight, bmi.toFixed(2));
+  const liElement = document.createElement("li");
 
-  username.value = document.createElement("h3");
+  const deleteButton = document.createElement("button");
+  deleteButton.textContent = "Delete";
+  deleteButton.classList.add("btn", "btn--delete");
+  deleteButton.addEventListener("click", () => {
+    liElement.remove();
+  });
 
-  console.log(username.value);
+  liElement.textContent = userName + " " + bmi.toFixed(2) + " ";
+  liElement.append(deleteButton);
+  console.log(userName + " " + bmi.toFixed(2));
 
+  olElement.append(liElement);
   formElement.reset();
 });
