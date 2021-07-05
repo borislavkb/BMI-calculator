@@ -8,18 +8,16 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <header></header>
+    <header><h1 class="heading">BMI Calculator</h1></header>
     <main>
       <section class="bmi-container">
-        <div class="bmi-box">
-          <h1 class="heading">BMI Calculator</h1>
-        </div>
+        <div class="bmi-box"></div>
         <div class="bmi-form-div">
           <form class="bmi-form" action="">
-            <label for="Height">Your height:</label>
-            <input type="text" id="height" name="185cm" />
-            <label for="Weight">Your weight:</label>
-            <input type="text" id="weight" name="85kg" />
+            <label for="height">Your height:</label>
+            <input type="text" id="height" name="height" placeholder="179 cm" />
+            <label for="weight">Your weight:</label>
+            <input type="text" id="weight" name="weight" placeholder="75 kg" />
             <button type="submit" class="button">Calculate BMI!</button>
           </form>
           <div class="bmi-form-result">
