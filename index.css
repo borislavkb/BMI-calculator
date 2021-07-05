@@ -13,3 +13,7 @@ body {
 .bmi-form-div {
   padding: 30px;
 }
+
+input {
+  margin: 2em;
+}
