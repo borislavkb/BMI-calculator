@@ -5,12 +5,6 @@ const weightInput = document.querySelector("#weight");
 
 const bmiMessage = document.querySelector(".result");
 
-// const button = document.querySelector("button");
-
-// function calculate(heightInput, weightInput) {
-//   let result = heightInput.value / weightInput.value ** 2;
-//   console.log(result);
-// }
 
 formElement.addEventListener("submit", (event) => {
   const bmi = (weightInput.value / heightInput.value ** 2) * 10000;
@@ -24,5 +18,5 @@ formElement.addEventListener("submit", (event) => {
     bmiMessage.style.color = "orange";
   }
   formElement.reset();
-  console.log("clicked");
+  
 });
