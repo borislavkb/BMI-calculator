@@ -28,3 +28,7 @@ input {
 .button:hover {
   background-color: lightsteelblue;
 }
+
+.feature:nth-child(2) {
+  background-color: lightgray;
+}
