@@ -13,3 +13,39 @@ body {
 .bmi-form-div {
   padding: 30px;
 }
+
+input {
+  margin: 2em;
+}
+
+.button {
+  background-color: lightskyblue;
+  padding: 0.75em;
+  border: none;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: lightsteelblue;
+}
+
+li:nth-child(2) {
+  background-color: lightgray;
+}
+
+.btn {
+  all: unset;
+  border: 1px solid black;
+  padding: 0.5em 0.75em;
+  cursor: pointer;
+}
+.btn:hover {
+  opacity: 0.7;
+}
+
+.btn-delete {
+  background: red;
+  color: whitesmoke;
+  position: relative;
+  margin-left: 340px;
+}
