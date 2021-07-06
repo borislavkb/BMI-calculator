@@ -46,4 +46,6 @@ li:nth-child(2) {
 .btn-delete {
   background: red;
   color: whitesmoke;
+  position: relative;
+  margin-left: 340px;
 }

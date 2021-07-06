@@ -24,13 +24,12 @@ formElement.addEventListener("submit", (event) => {
     bmiMessage.style.color = "orange";
   }
 
-  // const bmiCat;
+  // function cat (bmi){
   //   if (bmi > 18.5 && bmi <= 25) {
   //     bmiCat.textContent = "normal";
   //     bmiCat.style.color = "green";
   //   } else if (bmi < 18.5) {
   //     bmiCat.textContent = "underweight";
-
   //   } else if (bmi > 25 && bmi < 30) {
   //     bmiCat.textContent = "obese";
   //     bmiCat.style.color = "orange";
@@ -38,7 +37,7 @@ formElement.addEventListener("submit", (event) => {
   //     bmiCat.textContent = "overweight";
   //     bmiCat.style.color = "red";
   //   }
-
+  // }
   const userName = username.value;
 
   const liElement = document.createElement("li");
